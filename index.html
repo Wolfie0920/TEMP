@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISYON ALAGA</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video class="back-vid" loop autoplay muted plays-inline src="VIDEOS/misyonalagavideo.mov" type="video/mov"></video>
+
+        <header>
+            <div class="left">
+                <img src="PICTURES/Project Alaga.png" alt="logo">
+                <h1> 
+                    MISYON <span style="color: rgb(17, 17, 202);">ALAGA PH</span>
+                </h1>
+            </div>
+
+            <ul>
+                <li><a href="#hero-section">ABOUT</a></li>
+                <li><a href="#vision-section">VISION</a></li>
+                <li><a href="#mission-section">MISSION</a></li>
+                <li><a href="#goal-section">GOAL</a></li> <!-- Link to Goal section -->
+                <li><a href="#core-values-section">CORE VALUES</a></li> <!-- Link to Core Values section -->
+                <li><a href="#" id="donateBtn">DONATE</a></li>
+            </ul>
+
+            <div class="box-icons">
+                <a href="https://www.facebook.com/profile.php?id=61577768310874" target="_blank"><i class='bx bxl-facebook-circle'></i></a> <!-- Replace with your Facebook URL -->
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </header>
+
+        <div class="flag-box">
+            <video loop autoplay muted playsinline src="VIDEOS/vecteezy_philippine-flag-in-the-wind-detailed-fabric-texture_46344851.mp4" type="video/mp4"></video>
+        </div>
+
+        <section class="hero" id="hero-section">
+            <div class="hero-info">
+                <div class="hero-info-title">
+                    <i class='bx bxs-diamond'></i>
+                    MISYON ALAGA
+                </div>
+                <h1><span class="gradient">EVERYONE MATTERS</span></h1>
+                <p>No child should suffer from hunger or hidden hunger. Through care, nutrition, and education, we stand to end malnutrition — one child, one community at a time.</p>
+                <button id="contactBtn"><i class='bx bxs-send'></i> CONTACT US</button>
+            </div>
+
+            <div class="hero-vid-box">
+                <video id="hero-video" autoplay muted playsinline></video>
+            </div>
+        </section>
+
+        <!-- New Vision Section -->
+        <section class="vision-section" id="vision-section">
+            <div class="vision-info">
+                <h1>Our Vision</h1>
+                <p>We envision a Philippines where every child grows up nourished, healthy, and full of potential - supported by communities that value well-being, dignity, and hope. Our vision is a nation free from malnutrition, built by empowered families, compassionate youth leaders, and resilient communities, one community at a time.</p>
+            </div>
+        </section>
+
+        <!-- New Mission Section -->
+        <section class="mission-section" id="mission-section">
+            <div class="mission-info">
+                <h1>Our Mission</h1>
+                <p>Misyon ALAGA PH is devoted to combating childhood malnutrition through sustainable nutrition programs, health education, and community-based interventions. We seek to empower families and uphold the well-being of Filipino children. With compassion and purpose, we aim to transform lives — one community at a time — while inspiring the youth to take action and pay it forward for generations to come.</p>
+            </div>
+        </section>
+
+        <!-- New Goal Section -->
+        <section class="goal-section" id="goal-section">
+            <div class="goal-info">
+                <h1>Our Goal</h1>
+                <p>Our primary goal is to significantly reduce childhood malnutrition in underserved areas through strategic partnerships, inclusive health and nutrition policies, and localized, sustainable programs. Through this movement, we aim not only to uplift children and families — one community at a time — but also to awaken a generation of young advocates who will continue the mission and extend its impact to future generations.</p>
+            </div>
+        </section>
+
+        <!-- New Core Values Section -->
+        <section class="core-values-section" id="core-values-section">
+            <div class="core-values-info">
+                <h1>Core Values</h1>
+                <p>Compassion: We serve with empathy and care, recognizing the daily struggles of families affected by poverty and hunger.</p>
+                <p>Integrity: We uphold transparency, accountability, and ethical responsibility in all aspects of our work.</p>
+                <p>Empowerment: We equip individuals and communities — especially the youth — with the tools, knowledge, and confidence to drive their own transformation.</p>
+                <p>Equity: We believe that every child deserves access to proper nutrition and care, regardless of background or circumstance.</p>
+                <p>Sustainability: We prioritize long-term impact by building programs that endure and inspire action beyond our direct involvement.</p>
+                <p>Hope: We cultivate resilience and optimism, affirming every child’s right to dream, grow, and succeed.</p>
+                <p>Community-Centered Service: We commit to meaningful, localized impact by listening to, working with, and growing alongside the people we serve — one community at a time — while nurturing the next generation of changemakers.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal for Contact Us -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeContact">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="contactName" placeholder="Your Name" required>
+                <input type="email" id="contactEmail" placeholder="Your Email" required>
+                <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Donate -->
+    <div id="donateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeDonate">&times;</span>
+            <h2>Donate</h2>
+            <form id="donateForm">
+                <input type="text" id="donateName" placeholder="Your Name" required>
+                <input type="email" id="donateEmail" placeholder="Your Email" required>
+                <textarea id="donateMessage" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Donation Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        const videoSources = [
+            "VIDEOS/vid2.mov",
+            "VIDEOS/vid19.mov",
+            "VIDEOS/vid16.mov",
+            "VIDEOS/vid18.mov"
+        ];
+
+        let currentVideoIndex = 0;
+        const heroVideo = document.getElementById('hero-video');
+
+        // Function to load the next video
+        function loadNextVideo() {
+            heroVideo.src = videoSources[currentVideoIndex];
+            heroVideo.load();
+            heroVideo.play();
+            currentVideoIndex = (currentVideoIndex + 1) % videoSources.length; // Loop back to the first video
+        }
+
+        // Event listener to load the next video when the current one ends
+        heroVideo.addEventListener('ended', loadNextVideo);
+
+        // Load the first video
+        loadNextVideo();
+
+        // Modal functionality
+        const contactBtn = document.getElementById('contactBtn');
+        const donateBtn = document.getElementById('donateBtn');
+        const contactModal = document.getElementById('contactModal');
+        const donateModal = document.getElementById('donateModal');
+        const closeContact = document.getElementById('closeContact');
+        const closeDonate = document.getElementById('closeDonate');
+
+        // Open Contact Us modal
+        contactBtn.onclick = function() {
+            contactModal.style.display = "block";
+        }
